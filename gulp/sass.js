@@ -1,12 +1,12 @@
-var gulp         = require('gulp');
-var sass         = require('gulp-sass');
-var sourcemaps   = require('gulp-sourcemaps');
-var postcss      = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
-var mqpacker     = require('css-mqpacker');
-var csso = require('postcss-csso');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const mqpacker = require('css-mqpacker');
+const csso = require('postcss-csso');
 
-var processors = [
+const processors = [
     autoprefixer({
         browsers: ['last 4 versions'],
         cascade: false
@@ -18,7 +18,7 @@ var processors = [
     csso
 ];
 
-gulp.task('sass', function() {
+gulp.task('sass', function () {
     return gulp
         .src('app/sass' + '/*.{sass,scss}')
         .pipe(sourcemaps.init())
@@ -31,7 +31,7 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('app/css'));
 });
 
-gulp.task('sass:watch', function() {
+gulp.task('sass:watch', function () {
     gulp.watch('app/sass' + '/**/*.{sass,scss}', ['sass']);
 });
 

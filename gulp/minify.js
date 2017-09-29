@@ -7,7 +7,7 @@ var cssnano = require('gulp-cssnano');
 var babel = require("gulp-babel");
 
 gulp.task('minify', function(){
-  return gulp.src('app/*.html')
+  return gulp.src('app/index.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', babel()))
     .pipe(gulpIf('*.js', uglify()))

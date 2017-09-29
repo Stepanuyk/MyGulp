@@ -10,8 +10,16 @@ gulp.task('copy-normalize-css', function() {
     .pipe(gulp.dest('dist/css'));
   });
 
-
-gulp.task('copy', ['copy-normalize-css', 'fonts'], function() {
-    return gulp.src('app/*')
+gulp.task('copy-html', function() {
+    return gulp.src('app/*.html')
     .pipe(gulp.dest('dist/'));
+  });
+
+  gulp.task('copy-fonts', function () {
+    return gulp.src('app/fonts/**/*')
+      .pipe(gulp.dest('dist/fonts'));
+  });
+
+gulp.task('copy', ['copy-normalize-css', 'copy-fonts'], function() {
+
   });

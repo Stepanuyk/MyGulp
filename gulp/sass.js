@@ -23,7 +23,7 @@ gulp.task('sass', function () {
         .src('app/sass' + '/*.{sass,scss}')
         .pipe(sourcemaps.init())
         .pipe(sass({
-            outputStyle: 'production' ? 'compact' : 'expanded', // nested, expanded, compact, compressed
+            outputStyle: 'compressed', // nested, expanded, compact, compressed
             precision: 5
         }))
         .pipe(postcss(processors))

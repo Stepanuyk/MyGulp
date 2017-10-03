@@ -12,12 +12,12 @@ gulp.task('webpack', () => {
 gulp.task('webpack:watch', () => {
     gulp.src('./app/js/app.js')
     .pipe(webpackStream(webpackConfig), webpack)
-    .pipe(gulp.dest('./app/tmp/js'));
+    .pipe(gulp.dest('./app/js'));
     
     gulp.watch('app/js/*.js').on('change', function(){
     gulp.src('./app/js/app.js')
         .pipe(webpackStream(webpackConfig), webpack)
-        .pipe(gulp.dest('./app/tmp/js'));
+        .pipe(gulp.dest('./app/js'));
     }
 );
 });

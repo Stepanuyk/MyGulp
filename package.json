@@ -31,10 +31,8 @@
     "normalize.css": "^7.0.0",
     "postcss-csso": "^2.0.0",
     "require-dir": "^0.3.2",
-    "run-sequence": "^2.2.0",
-    "webpack": "^3.6.0",
-    "webpack-stream": "^4.0.0"
-  },
+    "run-sequence": "^2.2.0"
+    },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

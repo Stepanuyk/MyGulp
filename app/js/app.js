@@ -1,2 +1,3 @@
-
-    
+let a = {
+    some: "ura"
+}

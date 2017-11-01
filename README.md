@@ -2,17 +2,17 @@
 ---
 ## Tasks
 1. gulp
-..* pug 
-..* sass 
-..* browserSync reload 
+  * pug 
+  * sass 
+  * browserSync reload 
 2. gulp build
-..* clean dir
-..* pug
-..* sass
-..* minify js
-..* minify css
-..* min image
-..* copy files
+  * clean dir
+  * pug
+  * sass
+  * minify js
+  * minify css
+  * min image
+  * copy files
 
 
 

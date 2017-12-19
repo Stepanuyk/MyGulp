@@ -5,12 +5,12 @@ const sourceFiles = ['/*', 'css/normalize.css'];
 const destination = '/dist/';
 
 
-gulp.task('copy-normalize-css', function() {
+  gulp.task('copy-normalize-css', function() {
     return gulp.src('app/css/normalize.css')
     .pipe(gulp.dest('dist/css'));
   });
 
-gulp.task('copy-html', function() {
+  gulp.task('copy-html', function() {
     return gulp.src('app/*.html')
     .pipe(gulp.dest('dist/'));
   });
@@ -20,6 +20,6 @@ gulp.task('copy-html', function() {
       .pipe(gulp.dest('dist/fonts'));
   });
 
-gulp.task('copy', ['copy-normalize-css', 'copy-fonts'], function() {
+  gulp.task('copy', ['copy-normalize-css', 'copy-fonts'], function() {
 
   });

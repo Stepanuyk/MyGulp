@@ -8,7 +8,7 @@ gulp.task('watch',['pug','pug:watch','sass','sass:watch'], function () {
         server: "./app"
     });
 
-    gulp.watch("app/css/*.css").on('change', browserSync.reload);
+    gulp.watch("app/css/styles.css").on('change', browserSync.reload);
     gulp.watch("app/js/*.js").on('change', browserSync.reload);
     gulp.watch("app/*.html").on('change', browserSync.reload);
 });
